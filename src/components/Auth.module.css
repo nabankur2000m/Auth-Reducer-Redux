@@ -1,0 +1,69 @@
+
+.auth {
+  background-color: #ffffff; 
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.1); 
+  width: fit-content;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.auth:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.auth .control {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.auth input[type='email'],
+.auth input[type='password'] {
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px; 
+  transition: border-color 0.3s ease;
+}
+
+.auth input[type='email']:hover, 
+.auth input[type='password']:hover {
+  border-color: #007bff; 
+}
+
+.auth input[type='email']:focus, 
+.auth input[type='password']:focus {
+  outline: none;
+  border-color: #28a745; 
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+}
+
+.auth button {
+  padding: 10px 25px;
+  background-color: #28a745; 
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth button:hover {
+  background-color: #218838; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.auth button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(1px);
+}
+
+.auth button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.5);
+}
